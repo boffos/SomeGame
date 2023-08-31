@@ -2,12 +2,12 @@ CFLAGS = -std=c++17 -O2
 LDFLAGS = -lglfw -lvulkan
 
 SomeGame: src/*.cpp
-	g++ $(CFLAGS) -o SomeGame src/*.cpp $(LDFLAGS)
+	g++ $(CFLAGS) -o bin/SomeGame src/*.cpp $(LDFLAGS)
 
 .PHONY: test clean
 
 test: SomeGame
-	./SomeGame
+	./bin/SomeGame
 
 clean:
-	rm -f SomeGame
+	rm -f bin/SomeGame
