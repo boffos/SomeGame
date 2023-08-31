@@ -1,1 +1,2 @@
 # SomeGame
+just some game
